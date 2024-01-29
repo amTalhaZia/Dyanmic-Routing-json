@@ -30,9 +30,7 @@ const comments = () => {
         <div>
           {comments.map((comment) => (
             <div key={comment.id} className="user-card">
-              <Link to={`/posts/${comment.id}`} >
                 <p className="user-name">{comment.email}</p>
-              </Link>
             </div>
           ))}
         </div>
